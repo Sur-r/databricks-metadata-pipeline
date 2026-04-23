@@ -1,0 +1,25 @@
+datasets:
+  - dataset_name: sales_orders
+    enabled: true
+    description: "Sales orders from ERP system"
+    source_type: csv
+    source_path: "/FileStore/sales_orders.csv"
+    target_type: delta
+    target_path: "/mnt/delta/sales_orders"
+    load_type: incremental
+    watermark_column: updated_at
+    primary_keys:
+      - order_id
+    write_mode: merge
+    partition_columns:
+      - order_date
+    schedule: "0 2 * * *"  # 2 AM daily
+    
+  - dataset_name: customer_data
+    enabled: false  # Disabled for now
+    source_type: csv
+    source_path: "/FileStore/customers.csv"
+    target_type: delta
+    target_path: "/mnt/delta/customers"
+    load_type: full
+    write_mode: overwrite
