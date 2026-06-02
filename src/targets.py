@@ -1,7 +1,7 @@
 """
 Dynamic target writer - writes to Delta tables with different modes
 """
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.functions import max as spark_max
 from delta.tables import DeltaTable
