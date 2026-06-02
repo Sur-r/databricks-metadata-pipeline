@@ -16,7 +16,7 @@ datasets:
     schedule: "0 2 * * *"  # 2 AM da
     
   - dataset_name: customer_data
-    enabled: false  # Disabled for now
+    enabled: false  # Disablor now
     source_type: csv
     source_path: "/FileStore/customers.csv"
     target_type: delta
