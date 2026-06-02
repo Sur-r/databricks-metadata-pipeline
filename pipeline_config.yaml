@@ -13,7 +13,7 @@ datasets:
     write_mode: merge
     partition_columns:
       - order_date
-    schedule: "0 2 * * *"  # 2 AM daily
+    schedule: "0 2 * * *"  # 2 AM da
     
   - dataset_name: customer_data
     enabled: false  # Disabled for now
