@@ -6,7 +6,7 @@
 # ## Execute this notebook to run your pipeline
 
 # MAGIC %md
-# ### 1. Setup and Imports
+# ### 1. Setup and Impor
 
 import sys
 import os
