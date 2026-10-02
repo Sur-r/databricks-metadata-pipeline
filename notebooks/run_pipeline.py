@@ -6,7 +6,7 @@
 # ## Execute this notebook to run your pipeline
 
 # MAGIC %md
-# ### 1. Setup and Imports
+# ### 1. Setup and Impor
 
 import sys
 import os
@@ -28,7 +28,7 @@ try:
 except:
     pass  # Running as job
 
-# Get parameters
+# Get param
 dataset_name = dbutils.widgets.get("dataset_name") if "dbutils" in dir() else ""
 catalog = dbutils.widgets.get("catalog") if "dbutils" in dir() else "default"
 schema = dbutils.widgets.get("schema") if "dbutils" in dir() else "control"
